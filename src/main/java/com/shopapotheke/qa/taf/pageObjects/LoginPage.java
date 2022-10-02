@@ -17,11 +17,12 @@ public class LoginPage extends BasePage {
     private static ElementLocator elementLocator;
     private RemoteWebDriver driver;
 
+    // What is the difference between RemoteWebDriver and WebDriver ??
 
     public LoginPage() {
 
         this.driver = Session.getWebDriver();
-        this.elementLocator = new ElementLocator(this.driver);
+        this.elementLocator = new ElementLocator(this.driver); //is this needed since we already initialize this in base page?
 
     }
 

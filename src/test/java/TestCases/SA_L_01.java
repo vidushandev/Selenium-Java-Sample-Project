@@ -10,7 +10,7 @@ import javax.script.ScriptException;
 public class SA_L_01 extends BaseTest {
 
     @Test
-    public void verify_user_can_login_with_valid_credentials() throws FrameworkException, ScriptException, InterruptedException {
+    public void verify_user_can_login_with_valid_credentials() throws FrameworkException, ScriptException {
 
         String email = "vidushan.senevirathna@gmail.com";
         String password = "shopApotheke@123";

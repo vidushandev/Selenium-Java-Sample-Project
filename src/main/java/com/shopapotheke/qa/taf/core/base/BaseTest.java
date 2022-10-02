@@ -9,7 +9,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.*;
 
-import javax.script.ScriptException;
 import java.util.concurrent.TimeUnit;
 
 import static com.shopapotheke.qa.taf.core.config.Configurations.*;
@@ -21,6 +20,7 @@ import static com.shopapotheke.qa.taf.core.config.Configurations.*;
 @Listeners({TestNgListener.class})
 public class BaseTest extends TestNgListener {
     private static Logger log = LogManager.getLogger(BaseTest.class);
+    private final By closeButton = By.xpath("//div[@class='gcd__close']");
 
     /**
      * Executes before each @Test method
@@ -46,9 +46,12 @@ public class BaseTest extends TestNgListener {
             SearchContext shadowRoot = shadowHost.getShadowRoot();
             shadowRoot.findElements(By.cssSelector("button")).get(1).click();
 
-        }catch (Exception e){
+            driver.findElement(closeButton).click();
 
+        }catch (Exception e){
         }
+
+
 
 
         log.info("************************* @BeforeMethod *************************");
@@ -79,4 +82,6 @@ public class BaseTest extends TestNgListener {
         log.info("************************* @AfterSuite *************************");
     }
 
+    private class Exceptione extends Throwable {
+    }
 }

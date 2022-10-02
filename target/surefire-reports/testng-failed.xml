@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="C:/testint/thimira2/shopapotheke-taf-core(failed)" verbose="0">
+    <classes>
+      <class name="TestCases.SA_L_02">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="verify_user_can_not_login_with_invalid_credentials"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- TestCases.SA_L_02 -->
+    </classes>
+  </test> <!-- C:/testint/thimira2/shopapotheke-taf-core(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

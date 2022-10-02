@@ -1,6 +1,5 @@
 package com.shopapotheke.qa.taf.core.base;
 
-//import com.cinglevue.qa.taf.core.config.ExecutionMode;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.remote.RemoteWebDriver;
