@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Compile') {
             steps {
-                echo 'Deploying....'
+                echo 'Deploying Project....'
                 bat 'mvn compile'
             }
         }
