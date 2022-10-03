@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shopapotheke-taf-core" />
+        <module name="Selenium-Java-Sample-Project" />
       </profile>
     </annotationProcessing>
   </component>
